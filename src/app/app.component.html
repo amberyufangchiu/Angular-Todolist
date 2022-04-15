@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <app-todolist (ListCreated)="onServerAdd($event)"></app-todolist>
+    <div 
+        class="TodoContent" 
+        *ngFor="let item of ListElement; let i = index" >
+          <input *ngIf="item.list" type="checkbox" 
+            [(ngModel)]="ListElement[i].checked"
+            >
+          <p [ngClass]="{ParaStyle:ListElement[i].checked==true}">{{item.list}}</p>
+          <button *ngIf="item.list" (click)="deleteBtn($event)">x</button>
+    </div>
+  </div>
+</div>

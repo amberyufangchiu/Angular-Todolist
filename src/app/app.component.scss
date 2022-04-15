@@ -1,0 +1,51 @@
+$color:rgb(79, 121, 152);
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(231, 238, 245);
+    .row{
+        background-color: #F8f8f8;
+        width: 30vw;
+        height: 50vh;
+        border-radius: 20px;
+        padding: 10px;
+        .TodoContent{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 65px 0px 65px;
+            input[type=checkbox] {
+                zoom: 1.5;
+                margin-right: 10px;
+            }
+            input:focus {
+                border-color: inherit;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+              }
+            p{
+                font-size: 20px;
+                margin-right: 10px;
+                color: $color;
+            }
+            .ParaStyle{
+                color: gray;
+                text-decoration-line: line-through;
+            }
+            button{
+                font-size: 20px;
+                padding: 5px 10px;
+                background-color: rgb(123, 175, 196);
+                border: none;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+$color:rgb(79, 121, 152);
+
+.header{
+    padding-top: 10px;
+    h1{
+        text-align: center;
+        color: $color;
+        font-size: 30px;
+    }
+    .inputSection{
+        margin-top: 5px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        input{
+            -webkit-box-shadow:inset 0 0 2px $color;
+            -moz-box-shadow:inset 0 0 2px $color;
+                 box-shadow:inset 0 0 2px $color;
+            background: transparent;
+            width: 250px;
+            border: none;
+            // border: 1px solid $color;
+            height: 35px;
+            border-radius: 8px 0px 0px 8px;
+            padding: 5px 10px;
+            font-size: 20px;
+            color: $color;
+        }
+        button{
+            border: 1px solid $color;
+            background-color: $color;
+            padding: 5px 10px;
+            border-radius: 0px 8px 8px 0px;
+            font-size: 20px;
+            color: white;
+        }
+    }
+}
